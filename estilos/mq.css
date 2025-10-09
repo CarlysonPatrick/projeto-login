@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* Pequenas telas: até 600px;
+Celulares grandes: 601px até 767px;
+Tablets: 768px até 991px;
+Laptops e desktops: 992px até 1199px;
+Telas grandes: 1200px pra cima. */
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+    section#login {
+        width: 90vw;
+    }
+    section#login > div#imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+    section#login > div#form {
+        float: right;
+        width: 70%;
+    }
+}
+@media screen and (min-width 992px){
+    section#login{
+        width: 991px;
+
+    }
+    section#login > div#imagem{
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+}
