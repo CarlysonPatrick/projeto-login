@@ -23,17 +23,17 @@ main{
 }
 section#login{
     background-color: white;
-    height: 600px;
+    height: 500px;
     width: 250px;
     border-radius: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
     box-shadow: 0px 0px 10px    rgba(0, 0, 0, 0.438);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 section#login > div#imagem {
     display: block;
@@ -55,6 +55,28 @@ div#form > p {
 }
 div.campo > label{
     display: none;
+}
+div.campo > span{
+    color: white;
+    font-size: 1.5em;
+    width: 30px;
+    padding: 4px;
+    transform: translateX(1.2px);
+}
+div.campo > input{
+    background-color: #53b9b6;
+    font-size: 1em;
+    width: calc(100% - 34.4px);
+    height: 100%;
+    border-radius: 3px;
+    border: 0px;
+    padding: 7px;
+    transform: translateY(-6.9px);
+    /* sempre que se usar alguma animação em CSS como transform, colocar a linha como ultimo seletor para evitar incompatibilidade de navegador */
+}
+div.campo > input:focus-within {
+    background-color: white;
+    border: none;
 }
 form > div.campo {
     background-color: #5f2c82;
