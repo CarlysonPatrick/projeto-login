@@ -64,7 +64,7 @@ div.campo > span{
     transform: translateX(1.2px);
 }
 div.campo > input{
-    background-color: #53b9b6;
+    background-color: #9af5f2;
     font-size: 1em;
     width: calc(100% - 34.4px);
     height: 100%;
